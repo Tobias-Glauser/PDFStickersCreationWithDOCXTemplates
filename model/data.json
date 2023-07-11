@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Sticker Aliment Normal",
+    "template": "Sticker aliment normal.docx",
+    "data": [
+      {
+        "name": "Nom aliment",
+        "template_name": "nom_aliment",
+        "type": "text"
+      },
+      {
+        "name": "Poids [kg]",
+        "template_name": "poids",
+        "type": "list",
+        "values": ["20", "25", "30", "35", "40", "45", "50"]
+      },
+      {
+        "name": "Type d'aliment",
+        "template_name": "type_aliment",
+        "type": "list",
+        "values": ["simple", "composé"]
+      },
+      {
+        "name": "Date de mise en sac",
+        "template_name": "date_mise_en_sac",
+        "type": "date"
+      }
+    ]
+  },
+  {
+    "name": "Sticker Fourrage Normal",
+    "template": "Sticker fourrage normal.docx",
+    "data": [
+      {
+        "name": "Client",
+        "template_name": "client",
+        "type": "text"
+      },
+      {
+        "name": "Formule",
+        "template_name": "formule",
+        "type": "text"
+      },
+      {
+        "name": "Poids [kg]",
+        "template_name": "poids",
+        "type": "list",
+        "values": ["20", "25", "30", "35", "40", "45", "50"]
+      },
+      {
+        "name": "Date de mise en sac",
+        "template_name": "date_mise_en_sac",
+        "type": "date"
+      }
+    ]
+  }
+]
