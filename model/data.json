@@ -1,7 +1,7 @@
 [
   {
-    "name": "Sticker Aliment Normal",
-    "template": "Sticker aliment normal.docx",
+    "name": "Sticker Aliment",
+    "template": "Sticker aliment.docx",
     "data": [
       {
         "name": "Nom aliment",
@@ -28,8 +28,8 @@
     ]
   },
   {
-    "name": "Sticker Fourrage Normal",
-    "template": "Sticker fourrage normal.docx",
+    "name": "Sticker Fourrage",
+    "template": "Sticker fourrage.docx",
     "data": [
       {
         "name": "Client",
@@ -51,6 +51,43 @@
         "name": "Date de mise en sac",
         "template_name": "date_mise_en_sac",
         "type": "date"
+      }
+    ]
+  },
+  {
+    "name": "Sticker Triage",
+    "template": "Sticker triage.docx",
+    "data": [
+      {
+        "name": "Client",
+        "template_name": "client",
+        "type": "text"
+      },
+      {
+        "name": "Label",
+        "template_name": "label",
+        "type": "text"
+      },
+      {
+        "name": "Produit",
+        "template_name": "produit",
+        "type": "text"
+      },
+      {
+        "name": "Poids [kg]",
+        "template_name": "poids",
+        "type": "list",
+        "values": ["20", "25", "30", "35", "40", "45", "50"]
+      },
+      {
+        "name": "Date de mise en sac",
+        "template_name": "date_sac",
+        "type": "date"
+      },
+      {
+        "name": "Lot",
+        "template_name": "lot",
+        "type": "number"
       }
     ]
   }
