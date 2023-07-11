@@ -1,4 +1,5 @@
 import customtkinter
+from customtkinter import filedialog
 from sticker.sticker_data import StickerDataNumber, StickerDataText, StickerDataDate, StickerDataList
 
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
@@ -87,7 +88,7 @@ class StickerFrame(customtkinter.CTkScrollableFrame):
         if not self.sticker.is_valid():
             return
 
-        self.sticker.generate()
+        self.sticker.generate((filedialog.asksaveasfilename(filetypes=[("PDF", "*.pdf")], defaultextension=".pdf")))
 
     def get_data(self):
         for thing in self.entries:

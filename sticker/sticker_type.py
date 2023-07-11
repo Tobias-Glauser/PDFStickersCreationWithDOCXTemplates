@@ -30,10 +30,11 @@ class StickerType:
                     return False
         return True
 
-    def generate(self):
+    def generate(self, save_file_path):
+        print(save_file_path)
         try:
             sticker_generator = StickerGenerator()
-            sticker_generator.generate_sticker(self, os.getcwd() + "\\out\\" + self.name + ".pdf")
+            sticker_generator.generate_sticker(self, save_file_path)
         except Exception as e:
             print(e)
             return
